@@ -1,0 +1,130 @@
+
+body {
+    background-color: #000;
+    background-image: url('https://avatars.mds.yandex.net/i?id=18f5d7437fd265ec61da570c310b5c946479c95c-8491910-images-thumbs&ref=rim&n=33&w=356&h=200'); /* Тестовый фон */
+    background-repeat: repeat;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: rgba(0, 10, 0, 0.9); /* Темно-зеленоватый прозрачный */
+    border-left: 1px solid #0f0;
+    border-right: 1px solid #0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+  
+    text-align: center;
+}
+h3 {
+    
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+    background-color: #004400;
+    text-decoration: none;
+    
+    /* Делаем текст маленьким и красивым */
+    font-size: 10px;           /* Маленький размер */
+    font-weight: bold;         /* Жирный, чтобы лучше читался */
+    text-transform: uppercase; /* Все заглавные (как в меню Java4K) */
+    letter-spacing: 1px;       /* Расстояние между буквами для эстетики */
+    
+    /* Форма кнопки/ссылки */
+    padding: 2px 6px;          /* Внутренние отступы */
+    border: 1px solid #00ff00; /* Тонкая зеленая рамка */
+    display: inline-block;     /* Чтобы отступы работали корректно */
+    margin: 2px;
+    
+    transition: all 0.2s;      /* Плавный переход при наведении */
+}
+
+a:hover {
+    background-color: #00ff00; /* Инверсия при наведении */
+    color: #000000;
+    box-shadow: 0 0 8px #00ff00; /* Легкое свечение */
+}
+
+p {
+    font-size: 13px;          /* Оптимальный размер для Courier New */
+    line-height: 1.6;         /* Увеличенный интервал, чтобы текст не слипался */
+    margin-bottom: 15px;      /* Отступ между абзацами */
+    text-align: justify;      /* Выравнивание по ширине (как в старых журналах) */
+    color: #aaffaa;           /* Чуть более мягкий зеленый для глаз */
+}
+.big-link {
+    display: block;          /* Ссылка растянется на всю ширину */
+    text-align: center;      /* Текст будет по центру */
+    padding: 15px;
+    margin: 10px 0;
+    background: #002200;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.big-link:hover {
+    background: #00ff00;
+    color: #000;
+}
+
+button {
+    /* Basics */
+    width: 100%;              /* Makes button fill the 700px container */
+    max-width: 100%;          /* Ensures it doesn't overflow */
+    background: #002200;      /* Dark green background */
+    color: #00ff00;           /* Neon green text */
+    border: 1px solid #00ff00;
+    
+    /* Spacing & Text */
+    padding: 12px;
+    margin: 10px 0;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    /* Interaction */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #00ff00;      /* Invert colors */
+    color: #000000;
+    box-shadow: 0 0 15px #00ff00; /* Neon glow */
+}
+
+button:active {
+    background: #008800;      /* Feedback when clicked */
+    transform: scale(0.99);   /* Slight shrink effect */
+}
+
+/* Добавим немного стиля для выделения текста мышкой */
+::selection {
+    background: #00ff00;
+    color: #000;
+}
+hr {
+    border: none;               /* Убираем стандартную рамку */
+    border-top: 1px solid #00ff00; /* Делаем тонкую зеленую линию */
+    margin: 20px 0;             /* Отступы сверху и снизу от линии */
+    opacity: 0.5;               /* Делаем чуть тусклее, чтобы не отвлекала */
+}
+
+/* Вариант "Пунктирная линия" */
+hr.dashed {
+    border-top: 1px dashed #00ff00;
+}
