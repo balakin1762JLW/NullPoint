@@ -128,3 +128,19 @@ hr {
 hr.dashed {
     border-top: 1px dashed #00ff00;
 }
+.counter-digits {
+    font-size: 15px;          /* Уменьшили с 24px */
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0; /* Уменьшили свечение, чтобы текст не расплывался */
+    font-weight: bold;
+    letter-spacing: 2px;      /* Чуть меньше расстояние между цифрами */
+    font-family: "Courier New", monospace;
+}
+.counter-label {
+    font-size: 15px;           /* Very small and neat */
+    color: #008800;           /* Darker green for a "subtle" look */
+    text-transform: uppercase; /* Professional system style */
+    letter-spacing: 1px;      /* Better readability for small letters */
+    margin-right: 5px;        /* Gap between "visits:" and the numbers */
+    vertical-align: middle;   /* Aligns it perfectly with the digits */
+}
